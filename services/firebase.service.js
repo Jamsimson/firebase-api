@@ -1,4 +1,4 @@
-
+const { initializeApp }= require('firebase/app');
 const firebaseConfig = {
   apiKey: "AIzaSyB7-yzZaYzwcniOocP3BumyDvqD5C0rH2w",
   authDomain: "fir-b1362.firebaseapp.com",
@@ -9,3 +9,8 @@ const firebaseConfig = {
   measurementId: "G-T7633N0CYG"
 };
 
+const app = initializeApp(firebaseConfig);
+
+module.export = {
+  app
+}
